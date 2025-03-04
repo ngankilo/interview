@@ -1,6 +1,39 @@
-Dưới đây là một số bài toán có độ khó tương tự về tìm điểm mua/bán để tối ưu lợi nhuận:  
+### **Bài toán: Tìm điểm mua và bán có lợi nhuận**  
 
----
+#### **Đề bài**  
+Bạn được cung cấp một mảng `prices`, trong đó `prices[i]` là giá của một loại tài sản tại thời điểm `i`.  
+Hãy tìm một cặp điểm **mua** và **bán** sao cho lợi nhuận thu được là **cao nhất**.  
+
+**Lưu ý:**  
+- Bạn **phải mua trước khi bán**.  
+- Nếu không có giao dịch nào có lợi nhuận, trả về kết quả tương ứng.  
+
+#### **Dữ liệu đầu vào**  
+- Một mảng số nguyên `prices` với `n` phần tử `(1 ≤ n ≤ 10^5)`.  
+- `prices[i]` là giá tài sản tại thời điểm `i` `(0 ≤ prices[i] ≤ 10^9)`.  
+
+#### **Dữ liệu đầu ra**  
+- Hai số nguyên `buy_index`, `sell_index` (vị trí mua và bán) sao cho lợi nhuận là lớn nhất.  
+- Nếu không có giao dịch có lợi nhuận, trả về `-1, -1`.  
+
+#### **Ví dụ**  
+
+##### **Ví dụ 1**  
+```
+Input:  prices = [7, 1, 5, 3, 6, 4]
+Output: 1, 4
+Giải thích:
+- Mua tại index 1 (giá 1), bán tại index 4 (giá 6).
+- Lợi nhuận = 6 - 1 = 5 (lớn nhất có thể).
+```
+
+##### **Ví dụ 2**  
+```
+Input:  prices = [7, 6, 4, 3, 1]
+Output: -1, -1
+Giải thích:
+- Giá liên tục giảm, không có giao dịch nào có lợi nhuận.
+```
 
 ### **Bài toán 1: Tìm nhiều cặp lệnh mua/bán để tối ưu lợi nhuận**
 Cho một mảng giá `prices`, hãy tìm các điểm mua/bán sao cho tổng lợi nhuận thu được là cao nhất.  
